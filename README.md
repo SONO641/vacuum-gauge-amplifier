@@ -1,6 +1,6 @@
-#amplifier board for thermocouple vacuum gauge
+# amplifier board for thermocouple vacuum gauge
 
-###Description of the control board for vacuum thermocouple gauge.
+### Description of the control board for vacuum thermocouple gauge.
 
 I found <a href="http://www.belljar.net/tcgauge.htm">
 this tutorial</a>  about the operating principle of the thermocouple vacuum gauge. I wanted to make a board using a modern instrument amplifier. 
