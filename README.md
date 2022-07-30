@@ -3,19 +3,15 @@
 ### Description of the control board for vacuum thermocouple gauge.
 
 I found <a href="http://www.belljar.net/tcgauge.htm">
-this tutorial</a>  about the operating principle of the thermocouple vacuum gauge. I wanted to make a board using a modern instrument amplifier. 
-A thermocouple vacuum gauge works by heating a filament at a constant current. The filament’s temperature is higher at a low vacuum because it only loses heat by radiation. The temperature is lower at higher pressure because of the heat loss via the convection of gas. A thermocouple reads the filament’s temperature and produces a DC signal of a maximum of 10mV. An instrument amplifier (INA128) is used to amplify the mV signal by 334 times by using a 150-ohm register.
+this tutorial</a>  about the operating principle of the thermocouple vacuum gauge. I designed the board below based on the article. 
+
+A thermocouple vacuum gauge works by heating a filament at a constant current. The filament’s temperature is higher at a low vacuum because it only loses heat by radiation. The temperature is lower at higher pressure because of the heat loss via the convection of gas. A thermocouple reads the filament’s temperature and produces a DC signal at a maximum of 10mV. An instrument amplifier (INA128) is used to amplify the mV signal.
+
 The circuit has two parts. One is to supply current to the filament. I used LM317 to limit the current to 16mA. The 5V DC supply is isolated DC. I used another DC-DC converter for the instrument amplifier to supply ±9V for INA128. Using this setup, a few mtorr pressure gives 3.7V and 100mtorr 1V. 
+
 A commercial thermocouple gauge controller costs about $700 with a display and serial output. The amplifier board costs $25. I use ADS1115 to measure analog signals, and a Raspberry Pi to communicate.
-about the operating principle of the thermocouple vacuum gauge. I wanted to make a board using a modern instrument amplifier. The output ranges from 0 to 3.7V; high voltage corresponds to low vacuum (a few mmHg). I use ADS1115 to measure analogue signal. 
+ 
 
-A commercial thermocouple gauge controller currently costs about $700 with a display and serial output. The amplifier board costs $25 to make. 
-
-A thermocouple vacuum gauge works by heating a filament at constant current (16mA). The temperature of the filament is higher at low vacuum because it only radiates heat but at higher pressure heat can be lost by convecting gas. A thermocouple reads the temperautre of the filament, and produce a DC signal up to 10mV. An instrument amplifier (INA128) is used to amplify the signal by 334 times by using 150 ohm registor. 
-
-The circuit has two parts. One is to supply current to filament. I used LM317 to limit current to 16mA. The 5V DC supply is isolated DC by PEP1-S5-S5-M. I used another DC-DC converter to use ±9V (PEP1-S5-D9) for the instrument amplifier. 
-
-Using this set up, a few mtorr produced 3.7V and 100mtorr produced 1V. 
 
 
 
