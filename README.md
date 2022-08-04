@@ -2,6 +2,8 @@
 
 ### Description of the control board for vacuum thermocouple gauge.
 
+<a href="https://onolab-client.vercel.app/img/VacuumGaugeBoard.jpg">
+
 I found <a href="http://www.belljar.net/tcgauge.htm">
 this tutorial</a>  about the operating principle of the thermocouple vacuum gauge. I designed the board below based on the article. 
 
